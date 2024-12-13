@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "c1977887-6101-4819-bc5a-807001aa0426",
+		"name": "Geo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31709579",
+		"_collection_link": "https://umkm-ai.postman.co/workspace/ulbi~d502a2c5-82a9-4b37-9602-38f39754ef46/collection/31709579-c1977887-6101-4819-bc5a-807001aa0426?action=share&source=collection_link&creator=31709579"
+	},
+	"item": [
+		{
+			"name": "roads",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Login",
+						"value": "v4.public.eyJhbGlhcyI6IkdhZGluZyBLaGFpcmxhbWJhbmd-IiwiZXhwIjoiMjAyNC0xMS0yMlQyMzo0MToyOFoiLCJpYXQiOiIyMDI0LTExLTIyVDA1OjQxOjI4WiIsImlkIjoiNjI4MTM4MDgxNzMwMSIsIm5iZiI6IjIwMjQtMTEtMjJUMDU6NDE6MjhaIn0AjXaZRfsjBCdkra5E_ErkaPId2lte0kmOE_G_9RpqJoeHLFuuc1wCCY3EL_1WglQ5uPblWf64W-OmG50d_Q0N",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"long\": 107.5758500037501,\r\n  \"lat\": -6.874720427234501,\r\n  \"max_distance\": 600\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast2-awangga.cloudfunctions.net/jualin/data/get/roads",
+					"protocol": "https",
+					"host": [
+						"asia-southeast2-awangga",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"jualin",
+						"data",
+						"get",
+						"roads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "region",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Login",
+						"value": "v4.public.eyJhbGlhcyI6IkdhZGluZyBLaGFpcmxhbWJhbmd-IiwiZXhwIjoiMjAyNC0xMS0yMlQyMzo0MToyOFoiLCJpYXQiOiIyMDI0LTExLTIyVDA1OjQxOjI4WiIsImlkIjoiNjI4MTM4MDgxNzMwMSIsIm5iZiI6IjIwMjQtMTEtMjJUMDU6NDE6MjhaIn0AjXaZRfsjBCdkra5E_ErkaPId2lte0kmOE_G_9RpqJoeHLFuuc1wCCY3EL_1WglQ5uPblWf64W-OmG50d_Q0N",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"long\": 107.5758500037501,\r\n  \"lat\": -6.874720427234501\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast2-awangga.cloudfunctions.net/jualin/data/get/region",
+					"protocol": "https",
+					"host": [
+						"asia-southeast2-awangga",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"jualin",
+						"data",
+						"get",
+						"region"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
